@@ -1,3 +1,40 @@
+const slider = document.querySelector("#carrusel");
+let SelectorCarrusel = document.querySelectorAll(".carrusel-section");
+let ultimaSeleccion = SelectorCarrusel[SelectorCarrusel.length-1];
+
+const botonDerecho = document.querySelector(".carrusel-btn-derecho");
+const botonIzquierdo = document.querySelector(".carrusel-btn-izquierdo");
+
+slider.insertAdjacentElement("afterbegin", ultimaSeleccion);
+
+function moverDerecha() {
+    let carruselPrimeraEleccion = document.querySelectorAll(".carrusel-section");
+    slider.style.marginLeft = "200%";
+    slider.style.transition = "all 0.5s";
+    setTimeout(function() {
+        slider.style.transition = "none";
+        slider.insertAdjacentElement("beforeend",carruselPrimeraEleccion);    
+        slider.style.marginLeft = "-100%";
+    }, 500);
+}
+
+function moverIzquierda() {
+    let carruselultimaSeleccion = document.querySelectorAll(".carrusel-section");
+    slider.style.marginLeft = "0%";
+    slider.style.transition = "all 0.5s";
+    setTimeout(function() {
+        slider.style.transition = "none";
+        slider.insertAdjacentElement("afterbegin", carruselultimaSeleccion);
+        slider.style.marginLeft = "-100%";
+    }, 500);
+}
+
+
+botonDerecho.addEventListener("click",moverIzquierda);
+botonIzquierdo.addEventListener("click",moverDerecha);
+
+
+
 let json = '{ "skill":"Python" , "value":"75" },' +
 '{ "skill":"Java" , "value":"75" },' +
 '{ "skill":"CSS" , "value":"30" },' +
@@ -31,8 +68,7 @@ function agregarHabilidad() {
         document.getElementById("skillList").appendChild(newLi);
     }
     
-}
-
+};
 
 
 
