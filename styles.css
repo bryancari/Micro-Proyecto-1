@@ -105,3 +105,43 @@ body {
     font-size: 24px;
     font-family: 'Kanit', sans-serif;
 }
+
+.imagenExperiencia {
+    padding:10px;    
+    display: block;
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+        align-items: center;
+        margin: auto;
+}
+
+.imagenPropia {
+    padding:10px;
+    display: block;
+    margin:auto;
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+        align-items: center;
+}
+
+.descripcionPropia {
+    text-align: center;
+}
+
+.elementosForm {
+    text-align: center;
+    line-height: 2;
+}
+
+.botonEnvio {
+    padding: 0.85em 1.5em;
+  font-size: 1 em;
+  cursor: pointer;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #5D5D9B;
+  border: 1px solid #222;
+  border-radius: 0;
+}
