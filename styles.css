@@ -40,3 +40,39 @@ body {
     text-decoration: none;
     color: black;
 }
+
+.carrusel-contenedor {
+    width: 40%;  
+    max-width: 900px; 
+    margin: auto;
+    overflow: hidden; 
+    position: relative;
+}
+
+.carrusel {
+    display:flex;
+    width: 400%;
+    height: 400px;
+}
+
+.carrusel-seccion {
+    width: 100%;
+}
+
+.carrusel-imagen {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.carrusel-boton {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: cornsilk;
+    top: 50%;
+    font-size: 25px;
+    text-align: center;
+    font
+    border-radius: 50%;
+}
