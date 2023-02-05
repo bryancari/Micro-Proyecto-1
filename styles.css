@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Signika+Negative:wght@300&display=swap');
 
 * {
     box-sizing: border-box;
@@ -42,12 +42,13 @@ body {
 }
 
 .carrusel-contenedor {
-    width: 40%;  
+    width: 40%;      
     max-width: 900px; 
     margin: auto;
     overflow: hidden; 
     position: relative;
     box-shadow: 0 0 0 10px #fff;
+    
 }
 
 .carrusel {
@@ -85,4 +86,21 @@ body {
 }
 .carrusel-btn-derecho {
     right: 10px;
+}
+
+.tituloMayor {
+    font-size: 70px;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+}
+
+.subtitulo2 {
+    font-size: 35px;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+}
+
+.subtitulo1 {
+    font-size: 24px;
+    font-family: 'Kanit', sans-serif;
 }
